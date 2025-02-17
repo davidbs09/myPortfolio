@@ -1,8 +1,19 @@
 @media (max-width: 768px) {
-    .nav-container, .presentation-container {
+
+    .nav-container,
+    .presentation-container,
+    .about-me {
         max-width: 90%;
         transition: ease 1s;
     }
+}
+
+@media screen and (max-width: 1250px) {
+    .photo-content img {
+        margin-right: 10px;
+        transition: ease 1.8s;
+    }
+    
 }
 
 @media screen and (max-width: 500px) {
@@ -15,12 +26,13 @@
 @media screen and (max-width: 768px) {
     .photo-content img {
         width: 240px;
-        transition: ease 3s;
-    }  
+        margin-right: 0;
+        transition: ease 1.8s;
+    }
 }
 
 @media screen and (max-width: 680px) {
     .photo-content img {
         display: none;
-    }  
+    }
 }

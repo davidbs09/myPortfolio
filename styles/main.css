@@ -1,0 +1,36 @@
+.about-me {
+    display: flex;
+    width: 70vw;
+    margin: 0 auto;
+    background-color: var(--secondary-color);
+    padding: 26px;
+    border-radius: 14px;
+}
+
+.about {
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    padding: 20px 20px;
+}
+
+.about h2, p {
+    color: var(--quaternary-color);
+}
+
+.about p {
+    font-weight: 200;
+}
+
+.about h2 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 22px;
+    font-family: "Oswald", serif;
+}
+
+.about h2 span {
+    font-size: 24px;
+    font-weight: 800;
+    color: var(--primary-color);
+}
