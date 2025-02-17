@@ -79,10 +79,46 @@
 
 .presentation-button {
     border: none;
-    margin-top: 12px;
+    cursor: pointer;
+    margin: 12px 8px 0 0;
     padding: 8px 16px;
     border-radius: 8px;
     background-color: var(--primary-color);
     color: var(--button-font-color);
     font-weight: 600;
+}
+
+.presentation-button:hover {
+    color: #e6e6e6;
+    transition: ease 200ms;
+}
+
+.presentation-content span {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.presentation-content span a {
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--quaternary-color);
+    margin: 10px;
+    padding: 12px 0 0 0;
+    font-size: 24px;
+}
+
+.presentation-content span a:visited {
+    color: var(--quaternary-color);
+}
+
+.presentation-content span a:focus {
+    color: var(--quaternary-color);
+    outline: none;
+}
+
+.presentation-content span a:hover {
+    color: var(--primary-color);
+    transition: ease 200ms;
 }
