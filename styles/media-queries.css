@@ -1,5 +1,5 @@
 @media (max-width: 768px) {
-    .nav-container, .about-container {
+    .nav-container, .presentation-container {
         max-width: 90%;
     }
 }
@@ -8,4 +8,22 @@
     .navbar ul {
         justify-content: space-evenly;
     }
+}
+
+@media screen and (max-width: 768px) {
+    .photo-content img {
+        width: 260px;
+    }  
+}
+
+@media screen and (max-width: 600px) {
+    .photo-content img {
+        width: 220px;
+    }  
+}
+
+@media screen and (max-width: 550px) {
+    .photo-content img {
+        display: none;
+    }  
 }
