@@ -31,8 +31,14 @@
 
 .navbar a {
     text-decoration: none;
+    font-family: sans-serif;
     color: var(--quaternary-color);
     font-size: 18px;
+}
+
+.navbar a:hover {
+    color: var(--primary-color);
+    transition: ease 200ms;
 }
 
 .presentation-container {
