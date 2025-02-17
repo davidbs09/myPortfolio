@@ -1,0 +1,11 @@
+@media (max-width: 768px) {
+    .nav-container, .about-container {
+        max-width: 90%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .navbar ul {
+        justify-content: space-evenly;
+    }
+}

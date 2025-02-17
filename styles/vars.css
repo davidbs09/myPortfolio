@@ -1,0 +1,16 @@
+:root {
+
+    /* Colors */
+
+    --primary-color: #00b4cc;
+    --secondary-color: #4c4d4d;
+    --terciary-color: #696a6a;
+    --quaternary-color: #f0f0f0;
+    --quinary-color: #000000;
+
+    /* Fonts */
+
+    --default-font: 'Open Sans', sans-serif;
+    --title-font: 'Roboto', sans-serif;
+
+}
