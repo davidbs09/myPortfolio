@@ -1,28 +1,25 @@
 @media (max-width: 768px) {
     .nav-container, .presentation-container {
         max-width: 90%;
+        transition: ease 1s;
     }
 }
 
 @media screen and (max-width: 500px) {
     .navbar ul {
         justify-content: space-evenly;
+        transition: ease 1s;
     }
 }
 
 @media screen and (max-width: 768px) {
     .photo-content img {
-        width: 260px;
+        width: 240px;
+        transition: ease 3s;
     }  
 }
 
-@media screen and (max-width: 600px) {
-    .photo-content img {
-        width: 220px;
-    }  
-}
-
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 680px) {
     .photo-content img {
         display: none;
     }  
