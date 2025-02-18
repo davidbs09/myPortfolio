@@ -31,7 +31,8 @@
 
 .navbar a {
     text-decoration: none;
-    font-family: sans-serif;
+    font-family: var(--default-font);
+    font-weight: 400;
     color: var(--quaternary-color);
     font-size: 18px;
 }
@@ -81,6 +82,19 @@
 .photo-content img {
     width: 280px;
     margin-right: 80px;
+    animation: move-up-down 4s ease-in-out infinite;
+}
+
+@keyframes move-up-down {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-12px);
+    }
 }
 
 .presentation-button {

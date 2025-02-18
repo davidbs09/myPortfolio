@@ -1,0 +1,62 @@
+.skills {
+    display: flex;
+    padding: 40px 0px;
+    margin: 0 auto;
+    border-radius: 14px;
+    background-color: var(--secondary-color);
+    width: 70vw;
+    overflow: hidden;
+}
+
+.hard-skills {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    width: calc(200% + 140px);
+    animation: scroll 16s linear infinite;
+}
+
+.hard-skills i {
+    font-size: 60px;
+    cursor: pointer;
+    margin: 0 70px;
+}
+
+#java {
+    color: #da8168;
+}
+
+#spring {
+    color: #6db33f;
+}
+
+#javascript {
+    color: yellow;
+}
+
+#git {
+    color: #f34f29;
+}
+
+#github {
+    color: #6e5494;
+}
+
+#html {
+    color: #e34f26;
+}
+
+#css {
+    color: #264de4;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(-50%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}

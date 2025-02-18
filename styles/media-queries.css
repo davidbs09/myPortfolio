@@ -2,9 +2,16 @@
 
     .nav-container,
     .presentation-container,
-    .about-me {
+    .about-me,
+    .skills {
         max-width: 90%;
         transition: ease 1s;
+    }
+
+    .photo-content img {
+        width: 240px;
+        margin-right: 0;
+        transition: ease 1.8s;
     }
 }
 
@@ -13,7 +20,51 @@
         margin-right: 10px;
         transition: ease 1.8s;
     }
-    
+
+    .hard-skills{
+        animation: scroll 14s linear infinite;
+    }
+    .hard-skills i {
+        margin: 0 50px;
+        transition: ease 1s;
+    }
+
+}
+
+@media screen and (max-width: 960px) {
+
+    .hard-skills{
+        animation: scroll 10s linear infinite;
+    }
+    .hard-skills i {
+        margin: 0 40px;
+        transition: ease 1s;
+    }
+}
+
+@media screen and (max-width: 750px) {
+
+    .hard-skills{
+        animation: scroll 8s linear infinite;
+    }
+    .hard-skills i {
+        margin: 0 30px;
+        transition: ease 1s;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .photo-content img {
+        display: none;
+    }
+
+    .hard-skills{
+        animation: scroll 6s linear infinite;
+    }
+    .hard-skills i {
+        margin: 0 20px;
+        transition: ease 1s;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -21,18 +72,12 @@
         justify-content: space-evenly;
         transition: ease 1s;
     }
-}
 
-@media screen and (max-width: 768px) {
-    .photo-content img {
-        width: 240px;
-        margin-right: 0;
-        transition: ease 1.8s;
+    .hard-skills{
+        animation: scroll 4s linear infinite;
     }
-}
-
-@media screen and (max-width: 680px) {
-    .photo-content img {
-        display: none;
+    .hard-skills i {
+        margin: 0 10px;
+        transition: ease 1s;
     }
 }
