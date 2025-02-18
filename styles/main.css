@@ -28,7 +28,7 @@
     font-size: 18px;
     font-weight: 400;
     margin-bottom: 22px;
-    font-family: "Oswald", serif;
+    font-family: var(--title-font);
 }
 
 .about h2 span {

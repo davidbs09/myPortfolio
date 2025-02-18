@@ -28,12 +28,13 @@
 
 .navbar ul li {
     margin: 0 10px;
+    font-family: var(--title-font);
 }
 
 .navbar a {
     text-decoration: none;
     font-family: var(--default-font);
-    font-weight: 400;
+    font-weight: 500;
     color: var(--quaternary-color);
     font-size: 18px;
 }

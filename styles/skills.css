@@ -24,6 +24,11 @@
     margin: 0 70px;
 }
 
+.hard-skills i:hover {
+    transform: scale(1.2);
+    transition: ease 200ms;
+}
+
 #java {
     color: #da8168;
 }
