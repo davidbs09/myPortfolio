@@ -60,6 +60,7 @@ p {
     background-color: var(--secondary-color);
     overflow: hidden;
     border: none;
+    margin-bottom: 40px;
 }
 
 .project-content img {
@@ -68,6 +69,7 @@ p {
     width: 50%;
     border-top-left-radius: 14px;
     margin: 0 auto;
+    height: 350px;
 }
 
 .content {

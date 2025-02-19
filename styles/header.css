@@ -6,6 +6,7 @@
     background-color: var(--secondary-color);
     padding: 12px 10px;
     border-radius: 14px;
+    margin-top: 20px;
     margin-bottom: 40px;
     width: 70vw;
 }
