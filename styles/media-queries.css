@@ -3,7 +3,8 @@
     .nav-container,
     .presentation-container,
     .about-me,
-    .skills {
+    .skills,
+    .container-projects {
         max-width: 90%;
         transition: ease 1s;
     }
@@ -29,6 +30,35 @@
         transition: ease 1s;
     }
 
+}
+
+@media screen and (max-width: 1050px){
+    .project-content,
+    .project-content img {
+        flex-direction: column;
+    }
+
+    .project-content,
+    .project-content img,
+    .content,
+    .buttons {
+        width: 100%;
+        transition: ease 1s;
+    }
+
+    .content {
+        padding: 20px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content button {
+        width: 80%;
+        margin-bottom: 10px;
+    }
 }
 
 @media screen and (max-width: 960px) {

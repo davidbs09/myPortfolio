@@ -6,7 +6,7 @@
     background-color: var(--secondary-color);
     padding: 12px 10px;
     border-radius: 14px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     width: 70vw;
 }
 
@@ -54,7 +54,7 @@
     border-radius: 14px;
     padding: 26px;
     width: 70vw;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .presentation-content {
@@ -79,12 +79,13 @@
     font-family: "Poppins", serif;
     font-weight: 200;
     font-size: 1.2rem;
+    text-align: left;
 }
 
 .photo-content img {
     width: 280px;
     margin-right: 80px;
-    animation: move-up-down 4s ease-in-out infinite;
+    animation: move-up-down 3.5s ease-in-out infinite;
 }
 
 @keyframes move-up-down {

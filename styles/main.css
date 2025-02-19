@@ -5,7 +5,7 @@
     background-color: var(--secondary-color);
     padding: 26px;
     border-radius: 14px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .about {
@@ -14,9 +14,11 @@
     flex-direction: column;
     padding: 20px 20px;
     width: 80%;
+    text-align: left;
 }
 
-.about h2, p {
+.about h2,
+p {
     color: var(--quaternary-color);
 }
 
@@ -35,4 +37,100 @@
     font-size: 24px;
     font-weight: 800;
     color: var(--primary-color);
+}
+
+.container-projects {
+    display: flex;
+    width: 70vw;
+    margin: 0 auto;
+    background-color: var(--terciary-color);
+    border-radius: 14px;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.project-content {
+    display: flex;
+    flex-direction: row;
+    border-radius: 14px;
+    background-color: var(--secondary-color);
+    overflow: hidden;
+    border: none;
+}
+
+.project-content img {
+    display: flex;
+    justify-content: left;
+    width: 50%;
+    border-top-left-radius: 14px;
+    margin: 0 auto;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: right;
+    width: 50%;
+    padding: 20px;
+}
+
+.content span {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 8px;
+}
+
+.content span .icons {
+    font-size: 24px;
+}
+
+.content span h3 {
+    font-family: var(--title-font);
+    color: var(--primary-color);
+    width: 50%;
+}
+
+.content p {
+    font-family: var(--default-font);
+    color: var(--quaternary-color);
+    font-weight: 200;
+    text-align: left;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 8px;
+}
+
+.content button {
+    padding: 4px 20px;
+    border: 1px solid var(--primary-color);
+    background-color: var(--secundary-color);
+    color: var(--quaternary-color);
+    border-radius: 14px;
+    cursor: pointer;
+    width: 40%;
+    height: 50px;
+    text-align: center;
+}
+
+.content button:hover {
+    background-color: var(--primary-color);
+    color: var(--secundary-color);
+    transition: ease 400ms;
+}
+
+.buttons {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 50vw;
+    flex-wrap: nowrap;
 }
