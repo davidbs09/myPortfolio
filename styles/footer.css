@@ -18,6 +18,7 @@
     color: var(--primary-color);
     font-family: var(--default-font);
 }
+
 .contact-content ul li {
     display: flex;
     align-items: center;
@@ -37,4 +38,21 @@
     overflow: hidden;
     text-overflow: ellipsis;
     max-width: 100%;
+}
+
+.contact-content ul li i,
+a {
+    color: var(--quaternary-color);
+    text-decoration: none;
+    transition: ease 1s;
+}
+
+.contact-content li:hover {
+    cursor: pointer;
+}
+
+.contact-content li span:hover {
+    text-decoration: underline;
+    color: #abdde4;
+    transition: ease-in 200ms;
 }

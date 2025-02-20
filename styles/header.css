@@ -108,14 +108,15 @@
     margin: 12px 8px 0 0;
     padding: 8px 16px;
     border-radius: 8px;
-    background-color: var(--primary-color);
-    color: var(--button-font-color);
-    font-weight: 800;
+    background-color: var(--quaternary-color);
+    color: var(--quinary-color);
+    font-weight: 700;
 }
 
 .presentation-button:hover {
-    color: #e6e6e6;
-    transition: ease 200ms;
+    background-color: var(--primary-color);
+    color: var(--quartenary-color);
+    transition: ease 800ms;
 }
 
 .presentation-content span {
@@ -145,5 +146,5 @@
 
 .presentation-content span a:hover {
     color: var(--primary-color);
-    transition: ease 200ms;
+    transition: ease 300ms;
 }
