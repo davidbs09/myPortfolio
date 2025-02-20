@@ -62,6 +62,18 @@
     color: #8cc84b;
 }
 
+#phone {
+    color: #125097;
+}
+
+#email {
+    color: #d44638;
+}
+
+#linkedin {
+    color: #0077b5;
+}
+
 @keyframes scroll {
     0% {
         transform: translateX(-50%);

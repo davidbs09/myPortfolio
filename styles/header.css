@@ -29,7 +29,8 @@
 
 .navbar ul li {
     margin: 0 10px;
-    font-family: var(--title-font);
+    font-family: var(--default-font);
+    text-transform: uppercase;
 }
 
 .navbar a {
