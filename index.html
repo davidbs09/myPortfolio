@@ -25,21 +25,21 @@
                         <a href="#home">Home</a>
                     </li>
                     <li>
-                        <a href="#sobre">Sobre</a>
+                        <a href="#about">Sobre</a>
                     </li>
                     <li>
                         <a href="#skills">Skills</a>
                     </li>
                     <li>
-                        <a href="#projetos">Projetos</a>
+                        <a href="#projects">Projetos</a>
                     </li>
                     <li>
-                        <a href="#contato">Contato</a>
+                        <a href="#contact">Contato</a>
                     </li>
                 </ul>
             </nav>
         </div>
-        <section class="presentation-container">
+        <section id="home" class="presentation-container">
             <div class="presentation-content">
                 <h1>Olá, eu sou David Bissaco</h1>
                 <p>Desenvolvedor Full Stack Junior</p>
@@ -54,7 +54,7 @@
             </div>
         </section>
     </header>
-    <main class="about-me">
+    <main id="about" class="about-me">
         <div class="about">
             <h2>
                 Sobre mim</br>
@@ -67,7 +67,7 @@
                 profissional júnior ou trainee na área de Tecnologia e Desenvolvimento de Software.</p>
         </div>
     </main>
-    <article class="skills">
+    <article id="skills" class="skills">
         <section class="hard-skills">
             <i id="java" class='bx bxl-java'></i>
             <i id="spring" class='bx bxl-spring-boot'></i>
@@ -94,7 +94,7 @@
             <i id="css" class='bx bxl-css3'></i>
         </section>
     </article>
-    <section class="container-projects">
+    <section id="projects" class="container-projects">
         <div class="projects">
             <div class="project-content">
                 <img src="./src/print-spotify-dev.png" alt="Spotify Dev">
@@ -116,8 +116,8 @@
                         tela menor, não fique mostrando aquele excesso de informações.
                     </p>
                     <div class="buttons">
-                        <button>Ver Projeto</button>
-                        <button>Repositório Git</button>
+                        <button><a href="https://spotify-dev-davidbs09.netlify.app/" target="_blank">Projeto</a></button>
+                        <button><a href="https://github.com/davidbs09/spotifyPage-js" target="_blank">Repositório Git</a></button>
                     </div>
                 </div>
             </div>
@@ -136,8 +136,8 @@
                         id, listas de categorias de jogos, jogos por listas e também foi implementado um endpoint capaz
                         de mover a ordem dos jogos no banco de dados sem afetar suas posições e organização.</p>
                     <div class="buttons">
-                        <button>Ver Projeto</button>
-                        <button>Repositório Git</button>
+                        <button><a href="">Projeto</a></button>
+                        <button><a href="https://github.com/davidbs09/dslist-backend" target="_blank">Repositório Git</a></button>
                     </div>
                 </div>
             </div>
@@ -159,14 +159,14 @@
                         de clientes.
                         O projeto foi feito com HTML, CSS e JavaScript.</p>
                     <div class="buttons">
-                        <button>Ver Projeto</button>
-                        <button>Repositório Git</button>
+                        <button><a href="">Projeto</a></button>
+                        <button><a href="">Repositório Git</a></button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <footer class="contact">
+    <footer id="contact" class="contact">
         <div class="contact-content">
             <h2>Meus Contatos</h2>
             <ul>
@@ -204,6 +204,8 @@
                 </a>
             </ul>
         </div>
+    </footer>
+        <button id="back-to-top" class="back-to-top">Voltar ao Topo</button>
         <script src="./scripts/script.js"></script>
 </body>
 
