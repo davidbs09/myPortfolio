@@ -31,3 +31,10 @@
     font-size: 24px;
     margin-right: 12px;
 }
+
+.contact-content ul li span {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+}
