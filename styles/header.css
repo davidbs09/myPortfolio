@@ -68,6 +68,11 @@
     padding: 20px;
 }
 
+.presentation-content span .home-links:hover {
+    color: var(--primary-color);
+    transition: ease 1ms;
+}
+
 .presentation-content h1 {
     color: var(--primary-color);
     font-family: "Oswald", serif;
@@ -105,18 +110,36 @@
 .presentation-button {
     border: none;
     cursor: pointer;
-    margin: 12px 8px 0 0;
+    margin: 12px 0 0;
     padding: 8px 16px;
-    border-radius: 8px;
-    background-color: var(--quaternary-color);
-    color: var(--quinary-color);
-    font-weight: 700;
+    border-radius: 10px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-weight: 500;
 }
 
 .presentation-button:hover {
-    background-color: var(--primary-color);
-    color: var(--quartenary-color);
-    transition: ease 800ms;
+    background-color: transparent;
+    color: var(--primary-color);
+    transition: ease 300ms;
+    border: 1px solid var(--primary-color);
+}
+
+.presentation-button .text-button {
+    border: none;
+    cursor: pointer;
+    margin: 12px 0 0;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: transparent;
+    color: var(--secondary-color);
+    font-weight: 500;
+}
+
+.presentation-button .text-button:hover {
+    background-color: transparent;
+    color: var(--primary-color);
+    transition: ease 300ms;
 }
 
 .presentation-content span {
@@ -131,20 +154,9 @@
     cursor: pointer;
     color: var(--quaternary-color);
     margin: 10px;
+}
+
+.presentation-content span .home-links {
     padding: 12px 0 0 0;
     font-size: 24px;
-}
-
-.presentation-content span a:visited {
-    color: var(--quaternary-color);
-}
-
-.presentation-content span a:focus {
-    color: var(--quaternary-color);
-    outline: none;
-}
-
-.presentation-content span a:hover {
-    color: var(--primary-color);
-    transition: ease 300ms;
 }
