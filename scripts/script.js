@@ -12,3 +12,10 @@ document.getElementById('back-to-top').onclick = function () {
         behavior: 'smooth'
     });
 };
+
+function scrollToSection(sectionId) {
+    const element = document.getElementById("contact");
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }

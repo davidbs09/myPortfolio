@@ -111,11 +111,11 @@
     border: none;
     cursor: pointer;
     margin: 12px 0 0;
-    padding: 8px 16px;
+    padding: 12px 26px;
     border-radius: 10px;
     background-color: var(--primary-color);
     color: var(--secondary-color);
-    font-weight: 500;
+    font-weight: 600;
 }
 
 .presentation-button:hover {
@@ -123,23 +123,6 @@
     color: var(--primary-color);
     transition: ease 300ms;
     border: 1px solid var(--primary-color);
-}
-
-.presentation-button .text-button {
-    border: none;
-    cursor: pointer;
-    margin: 12px 0 0;
-    font-size: 20px;
-    border-radius: 10px;
-    background-color: transparent;
-    color: var(--secondary-color);
-    font-weight: 500;
-}
-
-.presentation-button .text-button:hover {
-    background-color: transparent;
-    color: var(--primary-color);
-    transition: ease 300ms;
 }
 
 .presentation-content span {
