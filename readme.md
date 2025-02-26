@@ -1,10 +1,33 @@
-# Olá, este é o meu Portifólio. 👋
-Seja Bem-vindo(a) !
+# Portifólio de David Bissaco 👋
 
-Sou um Desenvolvedor Fullstack e este projeto possui o intuito de demonstrar os meus conhecimentos de forma mais clara e acessível.
+Olá! `Seja Bem-vindo(a)` ao meu portfólio. Sou um desenvolvedor Fullstack apaixonado por criar soluções inovadoras e acessíveis. Este portfólio tem como objetivo demonstrar minhas habilidades e projetos de forma clara e organizada.
 
->*Algumas de suas principais características é ser:*
+# 🛠️ Minhas Hard-skills :
+- Java
+- Spring Boot
+- HTML
+- CSS
+- JavaScript
+- Git e Github
 
+# 💬 Minhas Soft-skills :
+- Boa comunicação
+- Organização exemplar
+- Trabalho em Equipe
+- Proatividade
+- Produtividade
+- Resolução de Problemas
+
+# 🚀 Objetivo :
+Estou buscando ingressar no mercado de trabalho através de uma oportunidade como profissional nível júnior ou trainee, nas áreas relacionadas à Tecnologia e Desenvolvimento de software.
+
+# 📚 Estudando :
+- TypeScript
+- Node.js
+- PostgreSQL
+- Cloud
+
+# ✔️ Principais Características do Site :
 - Moderno 🚀
 - Prático ⚙
 - Responsivo 🌐
@@ -20,3 +43,5 @@ Sou um Desenvolvedor Fullstack e este projeto possui o intuito de demonstrar os 
 <div align="center">
   <img src="https://github.com/user-attachments/assets/1c473f88-f3a8-4e7c-bee6-206b89dd7d2b">
 </div>
+
+### Confira o site em : https://davidbissaco.netlify.app
