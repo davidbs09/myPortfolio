@@ -5,7 +5,7 @@
     .about-me,
     #skills,
     .container-projects,
-    .contact {
+    #contact {
         transition: ease 1s;
         margin: 0 auto;
         display: flex;
