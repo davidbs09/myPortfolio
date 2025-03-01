@@ -1,4 +1,4 @@
-# Portifólio de David Bissaco 👋
+# Portfólio de David Bissaco 👋
 
 Olá! `Seja Bem-vindo(a)` ao meu portfólio. Sou um desenvolvedor Fullstack apaixonado por criar soluções inovadoras e acessíveis. Este portfólio tem como objetivo demonstrar minhas habilidades e projetos de forma clara e organizada.
 
