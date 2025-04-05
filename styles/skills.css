@@ -38,8 +38,24 @@
     color: #6db33f;
 }
 
+#angular {
+    color: #e23237;
+}
+
+#typescript {
+    color: #007acc;
+}
+
 #javascript {
     color: yellow;
+}
+
+#nodejs {
+    color: #8cc84b;
+}
+
+#postgresql {
+    color: #336791;
 }
 
 #git {
