@@ -28,24 +28,7 @@
     }
 }
 
-@media screen and (max-width: 1250px) {
-    .photo-content img {
-        margin-right: 10px;
-        transition: ease 1.8s;
-    }
-
-    #skills .hard-skills {
-        animation: scroll 12s linear infinite;
-    }
-
-    #skills .hard-skills i {
-        margin: 0 50px;
-        transition: ease 1s;
-    }
-
-}
-
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1300px) {
 
     .project-content,
     .project-content img {
@@ -78,6 +61,23 @@
     html {
         padding: 0;
     }
+}
+
+@media screen and (max-width: 1250px) {
+    .photo-content img {
+        margin-right: 10px;
+        transition: ease 1.8s;
+    }
+
+    #skills .hard-skills {
+        animation: scroll 12s linear infinite;
+    }
+
+    #skills .hard-skills i {
+        margin: 0 50px;
+        transition: ease 1s;
+    }
+
 }
 
 @media screen and (max-width: 960px) {
