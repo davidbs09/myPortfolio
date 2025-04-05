@@ -67,12 +67,6 @@ p {
     color: rgb(192, 204, 223);
 }
 
-.project-content #loading {
-    height: 50%;
-    display: block;
-    margin: 0 auto;
-}
-
 .project-content img {
     display: flex;
     justify-content: left;
