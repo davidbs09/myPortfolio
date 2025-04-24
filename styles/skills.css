@@ -7,16 +7,17 @@
     background-color: var(--secondary-color);
     width: 70vw;
     overflow: hidden;
+    position: relative;
 }
 
 .hard-skills {
     display: flex;
     align-items: center;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     flex-wrap: nowrap;
-    width: calc(200% + 140px);
-    animation: scroll 16s linear infinite;
+    width: calc(200%);
+    animation: scroll-reset 16s linear infinite;
 }
 
 .hard-skills i {
@@ -90,11 +91,14 @@
     color: #0077b5;
 }
 
-@keyframes scroll {
+@keyframes scroll-reset {
     0% {
         transform: translateX(-50%);
     }
-    100% {
+    90% {
         transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
     }
 }
