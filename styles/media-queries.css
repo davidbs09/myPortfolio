@@ -76,37 +76,36 @@
     }
 
     #skills .hard-skills {
-        animation: scroll 12s linear infinite;
+        animation: scroll-infinite 25s linear infinite;
     }
 
     #skills .hard-skills i {
-        margin: 0 50px;
-        transition: ease 1s;
+        margin: 0 40px;
+        font-size: 50px;
     }
-
 }
 
 @media screen and (max-width: 960px) {
 
     #skills .hard-skills {
-        animation: scroll 10s linear infinite;
+        animation: scroll-infinite 22s linear infinite;
     }
 
     #skills .hard-skills i {
-        margin: 0 40px;
-        transition: ease 1s;
+        margin: 0 35px;
+        font-size: 45px;
     }
 }
 
 @media screen and (max-width: 750px) {
 
     #skills .hard-skills {
-        animation: scroll 8s linear infinite;
+        animation: scroll-infinite 20s linear infinite;
     }
 
     #skills .hard-skills i {
         margin: 0 30px;
-        transition: ease 1s;
+        font-size: 40px;
     }
 }
 
@@ -116,12 +115,12 @@
     }
 
     #skills .hard-skills {
-        animation: scroll 6s linear infinite;
+        animation: scroll-infinite 18s linear infinite;
     }
 
     #skills .hard-skills i {
-        margin: 0 20px;
-        transition: ease 1s;
+        margin: 0 25px;
+        font-size: 35px;
     }
 
     .about {
@@ -137,11 +136,11 @@
     }
 
     #skills .hard-skills {
-        animation: scroll 4s linear infinite;
+        animation: scroll-infinite 15s linear infinite;
     }
 
     #skills .hard-skills i {
-        margin: 0 10px;
-        transition: ease 1s;
+        margin: 0 20px;
+        font-size: 30px;
     }
 }

@@ -17,13 +17,14 @@
     justify-content: flex-start;
     flex-wrap: nowrap;
     width: calc(200%);
-    animation: scroll-reset 16s linear infinite;
+    animation: scroll-infinite 30s linear infinite;
 }
 
 .hard-skills i {
     font-size: 60px;
     cursor: pointer;
     margin: 0 70px;
+    transition: transform 0.3s ease, margin 0.3s ease, font-size 0.3s ease;
 }
 
 .hard-skills i:hover {
@@ -91,11 +92,11 @@
     color: #0077b5;
 }
 
-@keyframes scroll-reset {
+@keyframes scroll-infinite {
     0% {
         transform: translateX(-50%);
     }
-    90% {
+    50% {
         transform: translateX(0);
     }
     100% {
