@@ -1,80 +1,131 @@
+/* ========================
+   CONTACT / FOOTER SECTION
+======================== */
 .contact {
-    display: flex;
-    width: 70vw;
-    margin: 0 auto;
-    background-color: var(--secondary-color);
-    padding: 20px;
-    border-radius: 14px;
+    background: linear-gradient(180deg, var(--bg-surface) 0%, var(--bg-base) 100%);
+    padding-bottom: 72px;
 }
 
-.contact-content {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    width: 100%;
+.contact__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 16px;
+    margin-bottom: 56px;
 }
 
-.contact-content h2 {
-    color: var(--primary-color);
-    font-family: var(--default-font);
-}
-
-.contact-content ul li {
+.contact__card {
     display: flex;
     align-items: center;
-    list-style: none;
-    margin: 20px 0;
-    color: var(--quaternary-color);
-    font-family: var(--default-font);
+    gap: 16px;
+    padding: 20px 22px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    color: var(--text-secondary);
+    transition: var(--transition-base);
 }
 
-.contact-content ul li i {
-    font-size: 24px;
-    margin-right: 12px;
+.contact__card:hover {
+    border-color: var(--border-hover);
+    background: var(--gradient-card);
+    color: var(--text-primary);
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-card);
 }
 
-.contact-content ul li span {
+.contact__icon {
+    font-size: 1.55rem;
+    flex-shrink: 0;
+}
+
+.contact__icon--email {
+    color: #ea4335;
+}
+
+.contact__icon--phone {
+    color: var(--color-primary-light);
+}
+
+.contact__icon--linkedin {
+    color: #0a66c2;
+}
+
+.contact__icon--github {
+    color: #c9d1d9;
+}
+
+.contact__label {
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-muted);
+    margin-bottom: 3px;
+}
+
+.contact__value {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: inherit;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    max-width: 100%;
+    max-width: 180px;
 }
 
-.contact-content ul li i,
-a {
-    color: var(--quaternary-color);
-    text-decoration: none;
-    transition: ease 1s;
+.contact__arrow {
+    margin-left: auto;
+    font-size: 1rem;
+    flex-shrink: 0;
+    opacity: 0;
+    transform: translate(-4px, 4px);
+    transition: var(--transition-base);
 }
 
-.contact-content li:hover {
-    cursor: pointer;
+.contact__card:hover .contact__arrow {
+    opacity: 1;
+    transform: translate(0, 0);
 }
 
-.contact-content li span:hover {
-    text-decoration: underline;
-    color: #abdde4;
-    transition: ease-in 200ms;
+.contact__footer-text {
+    text-align: center;
+    font-size: 0.86rem;
+    color: var(--text-muted);
+    border-top: 1px solid var(--border);
+    padding-top: 32px;
 }
 
+.contact__footer-text strong {
+    color: var(--color-primary-light);
+}
+
+/* ========================
+   BACK TO TOP BUTTON
+======================== */
 .back-to-top {
     display: none;
     position: fixed;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 100;
-    background-color: var(--primary-color);
-    color: white;
+    bottom: 32px;
+    right: 32px;
+    z-index: 999;
+    background: var(--gradient-brand);
+    color: #fff;
     border: none;
-    border-radius: 50px;
-    padding: 10px 20px;
-    font-size: 16px;
+    border-radius: var(--radius-sm);
+    width: 44px;
+    height: 44px;
+    font-size: 1.3rem;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: opacity 0.3s ease-in-out;
+    box-shadow: 0 4px 18px rgba(124, 111, 239, 0.42);
+    transition: transform var(--transition-base), box-shadow var(--transition-base);
 }
 
 .back-to-top:hover {
-    background-color: var(--secondary-color);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 28px rgba(124, 111, 239, 0.62);
+}
+
+.back-to-top.visible {
+    display: flex;
 }

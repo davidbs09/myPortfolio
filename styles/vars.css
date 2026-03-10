@@ -1,18 +1,54 @@
 :root {
 
-    /* Colors */
+    /* ===== Background ===== */
+    --bg-base: #06060f;
+    --bg-surface: #0c0c20;
+    --bg-card: #11112b;
+    --bg-card-hover: #18183a;
+    --bg-nav: rgba(6, 6, 15, 0.88);
 
-    --primary-color: #00b4cc;
-    --secondary-color: #29292b;
-    --terciary-color: #19191a;
-    --quaternary-color: #f0f0f0;
-    --quinary-color: #000000;
-    --button-font-color: #424242;
+    /* ===== Brand ===== */
+    --color-primary: #7c6fef;
+    --color-primary-light: #a496ff;
+    --color-secondary: #38bdf8;
+    --color-accent: #f472b6;
 
-    /* Fonts */
+    /* ===== Gradients ===== */
+    --gradient-brand: linear-gradient(135deg, #7c6fef 0%, #38bdf8 100%);
+    --gradient-text: linear-gradient(135deg, #a496ff 0%, #38bdf8 100%);
+    --gradient-card: linear-gradient(145deg, rgba(124, 111, 239, 0.08) 0%, rgba(56, 189, 248, 0.05) 100%);
 
-    --default-font: "Poppins", serif;
-    --title-font: "Oswald", serif;
-    --navbar-font: "Monomakh", serif;
+    /* ===== Text ===== */
+    --text-primary: #f1f5f9;
+    --text-secondary: #94a3b8;
+    --text-muted: #475569;
+
+    /* ===== Borders ===== */
+    --border: rgba(124, 111, 239, 0.18);
+    --border-hover: rgba(124, 111, 239, 0.45);
+
+    /* ===== Shadows ===== */
+    --shadow-card: 0 4px 28px rgba(0, 0, 0, 0.45);
+    --shadow-glow: 0 0 36px rgba(124, 111, 239, 0.28);
+
+    /* ===== Layout ===== */
+    --section-gap: 100px;
+    --container-width: 1100px;
+    --container-padding: 0 24px;
+
+    /* ===== Radius ===== */
+    --radius-sm: 8px;
+    --radius-md: 14px;
+    --radius-lg: 20px;
+    --radius-xl: 28px;
+
+    /* ===== Transitions ===== */
+    --transition-fast: 150ms ease;
+    --transition-base: 300ms ease;
+    --transition-slow: 500ms ease;
+
+    /* ===== Typography ===== */
+    --font-body: 'Inter', sans-serif;
+    --font-display: 'Space Grotesk', sans-serif;
 
 }
