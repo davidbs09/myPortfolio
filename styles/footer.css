@@ -54,6 +54,11 @@
     color: #c9d1d9;
 }
 
+.contact__card > div {
+    flex: 1;
+    min-width: 0;
+}
+
 .contact__label {
     font-size: 0.72rem;
     text-transform: uppercase;
@@ -67,9 +72,6 @@
     font-weight: 500;
     color: inherit;
     white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    max-width: 180px;
 }
 
 .contact__arrow {

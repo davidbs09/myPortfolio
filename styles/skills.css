@@ -109,7 +109,12 @@
     color: #e23237;
 }
 
-.skill-icon--typescript {
+.skill-icon--sqlite {
+    color: #0F80CC;
+}
+
+.skill-icon--typescript,
+.skill-icon--ionic {
     color: #3178c6;
 }
 

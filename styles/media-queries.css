@@ -178,9 +178,7 @@
         right: 20px;
     }
 
-    .contact__value {
-        max-width: 140px;
-    }
+
 
     /* Timeline */
     .timeline::before {
