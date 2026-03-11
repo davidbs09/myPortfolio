@@ -32,7 +32,7 @@
         <nav class="nav" aria-label="Navegação principal">
 
             <a href="#home" class="nav__logo">
-                <span class="nav__logo-text">David<span class="nav__logo-accent">.</span></span>
+                <span class="nav__logo-text">David Bissaco<span class="nav__logo-accent">.</span></span>
             </a>
 
             <ul class="nav__list" id="nav-list" role="list">
@@ -50,6 +50,9 @@
 
         </nav>
     </header>
+
+    <!-- Overlay do drawer mobile -->
+    <div class="nav__overlay" id="nav-overlay" aria-hidden="true"></div>
 
     <main>
 
@@ -90,14 +93,14 @@
 
                 <div class="hero__image">
                     <div class="hero__image-wrapper">
-                        <img src="./src/minha-foto.svg" alt="Foto de David Bissaco">
+                        <img src="./src/david-photo-anime-no-bg.png" alt="Foto de David Bissaco">
                     </div>
                 </div>
 
             </div>
 
             <div class="hero__scroll-indicator">
-                <a href="#about" aria-label="Rolar para a seÃ§Ã£o Sobre">
+                <a href="#about" aria-label="Rolar para a seção Sobre">
                     <i class="bx bx-chevrons-down"></i>
                 </a>
             </div>
@@ -116,12 +119,18 @@
 
                 <div class="about__content">
                     <div class="about__text">
-                        <p>Me chamo David e sou <strong>Desenvolvedor Mobile Junior na SIS Informática</strong>, onde trabalho com <strong>Ionic, Angular e TypeScript</strong> no desenvolvimento de
+                        <p>Me chamo David e sou <strong>Desenvolvedor Mobile Junior na SIS Informática</strong>, onde
+                            trabalho com <strong>Ionic, Angular e TypeScript</strong> no desenvolvimento de
                             aplicações mobile escaláveis, dashboards analíticos e integrações com IA.</p>
-                        <p>Tenho experiência com <strong>Java, Spring Boot, PHP, Node.js, Angular, Ionic, JavaScript, TypeScript, PostgreSQL, Docker, Git, HTML e CSS</strong>, com foco em
+                        <p>Tenho experiência com <strong>Java, Spring Boot, PHP, Node.js, Angular, Ionic, JavaScript,
+                                TypeScript, PostgreSQL, Docker, Git, HTML e CSS</strong>, com foco em
                             desenvolvimento web/mobile e boas práticas de engenharia de software.</p>
-                        <p>Formado em <strong>Análise e Desenvolvimento de Sistemas</strong> pela UniCesumar — com histórico de projetos freelancer reais com <strong>Java + Spring Boot</strong>, <strong>Angular</strong> e <strong>AWS + Docker</strong>.</p>
-                        <p>Comunicativo, proativo e comprometido. Aberto a <strong>networking e novas oportunidades</strong> na área de desenvolvimento.</p>
+                        <p>Formado em <strong>Análise e Desenvolvimento de Sistemas</strong> pela UniCesumar — com
+                            histórico de projetos freelancer reais com <strong>Java + Spring Boot</strong>,
+                            <strong>Angular</strong> e <strong>AWS + Docker</strong>.
+                        </p>
+                        <p>Comunicativo, proativo e comprometido. Aberto a <strong>networking e novas
+                                oportunidades</strong> na área de desenvolvimento.</p>
 
 
                     </div>
@@ -130,21 +139,21 @@
                         <div class="about__highlight-card">
                             <i class="bx bx-mobile-alt"></i>
                             <div>
-                                <h3>Mobile Dev</h3>
-                                <p>Ionic · Angular</p>
+                                <h3>Desenvolvedor Mobile</h3>
+                                <p>Ionic · Angular · React Native</p>
                             </div>
                         </div>
                         <div class="about__highlight-card">
                             <i class="bx bx-code-alt"></i>
                             <div>
-                                <h3>Fullstack</h3>
-                                <p>Front-end &amp; Back-end</p>
+                                <h3>Experiência Fullstack</h3>
+                                <p>Front-end &amp; Back-end &amp; SQL</p>
                             </div>
                         </div>
                         <div class="about__highlight-card">
                             <i class="bx bxs-graduation"></i>
                             <div>
-                                <h3>ADS</h3>
+                                <h3>Análise e Desenvolvimento de Sistemas (ADS)</h3>
                                 <p>Formado 07/2025</p>
                             </div>
                         </div>
@@ -441,24 +450,24 @@
                                 <button class="btn btn--sm btn--outline" onclick="alert('PROJETO EM ANDAMENTO')">
                                     <i class="bx bx-link-external"></i> Demo
                                 </button>
-                                <button class="btn btn--sm btn--ghost" onclick="alert('REPOSITÃ“RIO PRIVADO')">
-                                    <i class="bx bxl-github"></i> RepositÃ³rio
+                                <button class="btn btn--sm btn--ghost" onclick="alert('REPOSITÓRIO PRIVADO')">
+                                    <i class="bx bxl-github"></i> Repositório
                                 </button>
                             </div>
                         </div>
                     </article>
 
-                    <!-- Restaurante YskynÃ£o -->
+                    <!-- Restaurante Yskynão -->
                     <article class="project-card">
                         <div class="project-card__image">
-                            <img src="./src/print-yskynao-site.png" alt="Screenshot do site Restaurante YskynÃ£o">
+                            <img src="./src/print-yskynao-site.png" alt="Screenshot do site Restaurante Yskynão">
                         </div>
                         <div class="project-card__body">
-                            <h3 class="project-card__title">Restaurante YskynÃ£o</h3>
+                            <h3 class="project-card__title">Restaurante Yskynão</h3>
                             <p class="project-card__description">
-                                Site institucional para restaurante real com apresentaÃ§Ã£o, cardÃ¡pio, links de contato
+                                Site institucional para restaurante real com apresentação, cardápio, links de contato
                                 direto e
-                                avaliaÃ§Ãµes de clientes. Marketing digital sem taxas de terceiros.
+                                avaliações de clientes. Marketing digital sem taxas de terceiros.
                             </p>
                             <div class="project-card__tech">
                                 <i class="bx bxl-html5      skill-icon--html" title="HTML5"></i>
@@ -472,21 +481,21 @@
                                 </button>
                                 <button class="btn btn--sm btn--ghost"
                                     onclick="window.open('https://github.com/davidbs09/RestauranteYskynao', '_blank')">
-                                    <i class="bx bxl-github"></i> RepositÃ³rio
+                                    <i class="bx bxl-github"></i> Repositório
                                 </button>
                             </div>
                         </div>
                     </article>
 
-                    <!-- PrevisÃ£o do Tempo -->
+                    <!-- Previsão do Tempo -->
                     <article class="project-card">
                         <div class="project-card__image">
-                            <img src="./src/print-weather-forecast.png" alt="Screenshot do app PrevisÃ£o do Tempo">
+                            <img src="./src/print-weather-forecast.png" alt="Screenshot do app Previsão do Tempo">
                         </div>
                         <div class="project-card__body">
-                            <h3 class="project-card__title">PrevisÃ£o do Tempo</h3>
+                            <h3 class="project-card__title">Previsão do Tempo</h3>
                             <p class="project-card__description">
-                                Aplicativo conectado Ã  API OpenWeatherMap que exibe previsÃ£o do tempo de qualquer
+                                Aplicativo conectado à API OpenWeatherMap que exibe previsão do tempo de qualquer
                                 cidade de forma simples, objetiva e responsiva.
                             </p>
                             <div class="project-card__tech">
@@ -501,7 +510,7 @@
                                 </button>
                                 <button class="btn btn--sm btn--ghost"
                                     onclick="window.open('https://github.com/davidbs09/weather-forecast', '_blank')">
-                                    <i class="bx bxl-github"></i> RepositÃ³rio
+                                    <i class="bx bxl-github"></i> Repositório
                                 </button>
                             </div>
                         </div>
@@ -515,9 +524,9 @@
                         <div class="project-card__body">
                             <h3 class="project-card__title">Spotify Dev</h3>
                             <p class="project-card__description">
-                                RÃ©plica responsiva do Spotify com busca de artistas via JSON Server. Inclui Mobile
+                                Réplica responsiva do Spotify com busca de artistas via JSON Server. Inclui Mobile
                                 Button e
-                                media queries para experiÃªncia otimizada em dispositivos mÃ³veis.
+                                media queries para experiência otimizada em dispositivos móveis.
                             </p>
                             <div class="project-card__tech">
                                 <i class="bx bxl-nodejs     skill-icon--nodejs" title="Node.js"></i>
@@ -532,7 +541,7 @@
                                 </button>
                                 <button class="btn btn--sm btn--ghost"
                                     onclick="window.open('https://github.com/davidbs09/spotifyPage-js', '_blank')">
-                                    <i class="bx bxl-github"></i> RepositÃ³rio
+                                    <i class="bx bxl-github"></i> Repositório
                                 </button>
                             </div>
                         </div>
@@ -546,9 +555,9 @@
                         <div class="project-card__body">
                             <h3 class="project-card__title">DSlist Backend</h3>
                             <p class="project-card__description">
-                                API REST para gerenciamento de coleÃ§Ã£o de jogos com endpoints para listagem, busca por
+                                API REST para gerenciamento de coleção de jogos com endpoints para listagem, busca por
                                 ID,
-                                categorias e reordenaÃ§Ã£o dinÃ¢mica dos itens no banco de dados.
+                                categorias e reordenação dinâmica dos itens no banco de dados.
                             </p>
                             <div class="project-card__tech">
                                 <i class="bx bxl-java        skill-icon--java" title="Java"></i>
@@ -561,7 +570,7 @@
                                 </button>
                                 <button class="btn btn--sm btn--ghost"
                                     onclick="window.open('https://github.com/davidbs09/dslist-backend', '_blank')">
-                                    <i class="bx bxl-github"></i> RepositÃ³rio
+                                    <i class="bx bxl-github"></i> Repositório
                                 </button>
                             </div>
                         </div>

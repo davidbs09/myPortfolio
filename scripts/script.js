@@ -3,13 +3,15 @@
 ======================== */
 const header = document.getElementById('header');
 const backToTopBtn = document.getElementById('back-to-top');
+const navList = document.getElementById('nav-list');
 const navLinks = document.querySelectorAll('.nav__link');
 const sections = document.querySelectorAll('section[id], footer[id]');
 
 function handleScroll() {
     const scrollY = window.scrollY;
+    const isScrolled = scrollY > 40;
 
-    header.classList.toggle('header--scrolled', scrollY > 40);
+    header.classList.toggle('header--scrolled', isScrolled);
     backToTopBtn.classList.toggle('visible', scrollY > 320);
 
     sections.forEach(section => {
@@ -37,17 +39,25 @@ backToTopBtn.addEventListener('click', () => {
     MOBILE MENU
 ======================== */
 const navToggle = document.getElementById('nav-toggle');
-const navList = document.getElementById('nav-list');
+const navOverlay = document.getElementById('nav-overlay');
 
 function closeMenu() {
     navList.classList.remove('open');
+    navOverlay.classList.remove('open');
+    document.body.classList.remove('nav-open');
+    navToggle.setAttribute('aria-expanded', 'false');
     navToggle.querySelector('i').className = 'bx bx-menu';
 }
 
 navToggle?.addEventListener('click', () => {
     const isOpen = navList.classList.toggle('open');
+    navOverlay.classList.toggle('open', isOpen);
+    document.body.classList.toggle('nav-open', isOpen);
+    navToggle.setAttribute('aria-expanded', String(isOpen));
     navToggle.querySelector('i').className = isOpen ? 'bx bx-x' : 'bx bx-menu';
 });
+
+navOverlay?.addEventListener('click', closeMenu);
 
 navLinks.forEach(link => link.addEventListener('click', closeMenu));
 

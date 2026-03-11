@@ -8,16 +8,32 @@
     right: 0;
     z-index: 1000;
     padding: 20px 24px;
-    transition: background var(--transition-base), padding var(--transition-base), border-color var(--transition-base);
+    transition: padding var(--transition-base), border-color var(--transition-base);
     border-bottom: 1px solid transparent;
 }
 
-.header--scrolled {
+/* Backdrop blur via ::before para NÃO criar stacking context no header.
+   Isso garante que position:fixed dentro do header funcione corretamente. */
+.header::before {
+    content: '';
+    position: absolute;
+    inset: 0;
     background: var(--bg-nav);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
+    opacity: 0;
+    transition: opacity var(--transition-base);
+    z-index: -1;
+    pointer-events: none;
+}
+
+.header--scrolled {
     border-bottom-color: var(--border);
     padding: 12px 24px;
+}
+
+.header--scrolled::before {
+    opacity: 1;
 }
 
 .nav {
@@ -43,6 +59,11 @@
 .nav__list {
     display: flex;
     gap: 4px;
+    list-style: none;
+}
+
+.nav__item {
+    /* reset - sem estilos extras no desktop */
 }
 
 .nav__link {
@@ -81,9 +102,11 @@
     color: var(--color-primary-light);
 }
 
-/* ========================
-   HERO SECTION
-======================== */
+/* Nav drawer overlay — oculto por padrão em desktop */
+.nav__overlay {
+    display: none;
+}
+
 .hero {
     min-height: 100vh;
     display: flex;
@@ -219,7 +242,7 @@
     transform: translateY(-3px);
 }
 
-/* Hero image with spinning ring */
+/* Hero image */
 .hero__image {
     flex-shrink: 0;
     z-index: 1;
@@ -227,43 +250,23 @@
 
 .hero__image-wrapper {
     position: relative;
-    width: 320px;
-    height: 320px;
+    width: 400px;
+    height: 400px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.hero__image-wrapper::before {
-    content: '';
-    position: absolute;
-    inset: -14px;
-    border-radius: 50%;
-    background: conic-gradient(from 0deg,
-            var(--color-primary),
-            var(--color-secondary),
-            transparent 60%,
-            var(--color-primary));
-    animation: spin 7s linear infinite;
-    opacity: 0.6;
-}
-
-.hero__image-wrapper::after {
-    content: '';
-    position: absolute;
-    inset: -8px;
-    border-radius: 50%;
-    background: var(--bg-base);
-}
-
 .hero__image-wrapper img {
-    width: 288px;
-    height: 288px;
-    object-fit: cover;
-    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+    object-fit: contain;
     position: relative;
     z-index: 1;
     animation: float 4s ease-in-out infinite;
+    filter:
+        drop-shadow(0 0 28px rgba(124, 111, 239, 0.5))
+        drop-shadow(0 0 70px rgba(56, 189, 248, 0.2));
 }
 
 /* Scroll indicator */
@@ -302,15 +305,6 @@
     }
 }
 
-@keyframes spin {
-    from {
-        transform: rotate(0deg);
-    }
-
-    to {
-        transform: rotate(360deg);
-    }
-}
 
 @keyframes bounce {
 

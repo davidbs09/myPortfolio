@@ -29,6 +29,10 @@ body {
     overflow-x: hidden;
 }
 
+body.nav-open {
+    overflow: hidden;
+}
+
 img {
     max-width: 100%;
     display: block;

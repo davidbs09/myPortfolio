@@ -54,13 +54,13 @@
     }
 
     .hero__image-wrapper {
-        width: 260px;
-        height: 260px;
+        width: 300px;
+        height: 300px;
     }
 
     .hero__image-wrapper img {
-        width: 232px;
-        height: 232px;
+        width: 300px;
+        height: 300px;
     }
 
     .projects__grid {
@@ -77,28 +77,59 @@
         --container-padding: 0 18px;
     }
 
-    /* Mobile nav overlay */
-    .nav__list {
+    /* Mobile nav drawer */
+    .nav__overlay {
+        display: block;
         position: fixed;
         inset: 0;
-        background: rgba(6, 6, 15, 0.97);
-        backdrop-filter: blur(16px);
+        background: rgba(0, 0, 0, 0.55);
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+        z-index: 998;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity var(--transition-base);
+    }
+
+    .nav__overlay.open {
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .nav__list {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 70vw;
+        max-width: 320px;
+        background: linear-gradient(180deg, var(--bg-card) 0%, var(--bg-surface) 100%);
+        border-left: 2px solid var(--color-primary);
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 28px;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding: 90px 20px 40px;
+        gap: 4px;
         transform: translateX(100%);
-        transition: transform var(--transition-base);
+        transition: transform var(--transition-base), box-shadow var(--transition-base);
         z-index: 999;
+        overflow-y: auto;
     }
 
     .nav__list.open {
         transform: translateX(0);
+        box-shadow: -12px 0 48px rgba(0, 0, 0, 0.6);
+    }
+
+    .nav__item {
+        width: 100%;
     }
 
     .nav__link {
-        font-size: 1.2rem;
-        padding: 10px 24px;
+        font-size: 1rem;
+        padding: 13px 16px;
+        width: 100%;
+        display: block;
     }
 
     .nav__toggle {
@@ -108,13 +139,13 @@
 
     /* Hero */
     .hero__image-wrapper {
-        width: 210px;
-        height: 210px;
+        width: 240px;
+        height: 240px;
     }
 
     .hero__image-wrapper img {
-        width: 185px;
-        height: 185px;
+        width: 240px;
+        height: 240px;
     }
 
     /* Grids */
