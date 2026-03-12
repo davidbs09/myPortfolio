@@ -62,6 +62,58 @@ navOverlay?.addEventListener('click', closeMenu);
 navLinks.forEach(link => link.addEventListener('click', closeMenu));
 
 /* ========================
+    INFINITE SKILLS CAROUSEL
+======================== */
+(function initSkillsCarousel() {
+    const track = document.querySelector('.skills__track');
+    if (!track) return;
+
+    const SPEED_PX_PER_S = 80; // pixels por segundo — aumente para mais rápido
+
+    // Guarda os itens originais antes de qualquer clonagem
+    const originalItems = Array.from(track.children);
+
+    // Clona conjuntos completos até preencher pelo menos 2× a largura da tela
+    function fillTrack() {
+        const minWidth = window.innerWidth * 2;
+        while (track.scrollWidth < minWidth) {
+            originalItems.forEach(item => {
+                const clone = item.cloneNode(true);
+                clone.setAttribute('aria-hidden', 'true');
+                track.appendChild(clone);
+            });
+        }
+        // Um conjunto extra de buffer para garantir transição suave
+        originalItems.forEach(item => {
+            const clone = item.cloneNode(true);
+            clone.setAttribute('aria-hidden', 'true');
+            track.appendChild(clone);
+        });
+    }
+
+    // Mede a largura de um conjunto original e aplica o offset + duração
+    function applyMetrics() {
+        const singleSetWidth = originalItems.reduce((acc, el) => acc + el.offsetWidth, 0);
+        const duration = singleSetWidth / SPEED_PX_PER_S;
+        track.style.setProperty('--carousel-offset', `-${singleSetWidth}px`);
+        track.style.animationDuration = `${duration.toFixed(2)}s`;
+    }
+
+    fillTrack();
+    requestAnimationFrame(applyMetrics);
+
+    // Recalcula se a janela for redimensionada
+    let resizeTimer;
+    window.addEventListener('resize', () => {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(() => {
+            fillTrack();
+            requestAnimationFrame(applyMetrics);
+        }, 200);
+    }, { passive: true });
+})();
+
+/* ========================
     FADE-IN ON SCROLL
 ======================== */
 if ('IntersectionObserver' in window) {

@@ -35,11 +35,11 @@
     background: linear-gradient(to left, var(--bg-base), transparent);
 }
 
-/* Track holds 2× items; animates exactly 50% = one full loop */
+/* Track width is driven by content; JS sets --carousel-offset and duration */
 .skills__track {
     display: flex;
     align-items: center;
-    width: calc(200%);
+    width: max-content;
     animation: carousel-scroll 32s linear infinite;
 }
 
@@ -53,7 +53,7 @@
     }
 
     to {
-        transform: translateX(-50%);
+        transform: translateX(var(--carousel-offset, -50%));
     }
 }
 
@@ -144,4 +144,17 @@
 
 .skill-icon--css {
     color: #264de4;
+}
+
+.skill-icon--php {
+    color: #8892be;
+}
+
+.skill-icon--react,
+.skill-icon--reactnative {
+    color: #61dafb;
+}
+
+.skill-icon--docker {
+    color: #2496ed;
 }
