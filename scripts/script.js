@@ -10,23 +10,43 @@ const sections = document.querySelectorAll('section[id], footer[id]');
 function handleScroll() {
     const scrollY = window.scrollY;
     const isScrolled = scrollY > 40;
+    const reachedPageBottom = window.innerHeight + scrollY >= document.documentElement.scrollHeight - 4;
+    const headerHeight = header?.offsetHeight ?? 0;
+    const visibleViewportTop = headerHeight + 24;
 
     header.classList.toggle('header--scrolled', isScrolled);
     backToTopBtn.classList.toggle('visible', scrollY > 320);
 
-    sections.forEach(section => {
-        const top = section.offsetTop - 120;
-        const bottom = top + section.offsetHeight;
+    let activeSectionId = '';
+    let maxVisibleHeight = 0;
 
-        if (scrollY >= top && scrollY < bottom) {
-            navLinks.forEach(link => link.classList.remove('nav__link--active'));
-            const active = document.querySelector(`.nav__link[href="#${section.id}"]`);
-            if (active) active.classList.add('nav__link--active');
+    sections.forEach(section => {
+        const rect = section.getBoundingClientRect();
+        const visibleTop = Math.max(rect.top, visibleViewportTop);
+        const visibleBottom = Math.min(rect.bottom, window.innerHeight);
+        const visibleHeight = Math.max(0, visibleBottom - visibleTop);
+
+        if (visibleHeight >= maxVisibleHeight) {
+            maxVisibleHeight = visibleHeight;
+            activeSectionId = section.id;
         }
     });
+
+    if (!activeSectionId && reachedPageBottom && sections.length) {
+        activeSectionId = sections[sections.length - 1].id;
+    }
+
+    navLinks.forEach(link => link.classList.remove('nav__link--active'));
+
+    if (activeSectionId) {
+        const active = document.querySelector(`.nav__link[href="#${activeSectionId}"]`);
+        if (active) active.classList.add('nav__link--active');
+    }
 }
 
 window.addEventListener('scroll', handleScroll, { passive: true });
+window.addEventListener('resize', handleScroll);
+window.addEventListener('load', handleScroll);
 
 /* ========================
     BACK TO TOP
